@@ -2,7 +2,26 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Testing",
-    "details": "This is a test event",
-    "maximumAttendees": 100
+    "title": "Almoço especial",
+    "details": "This is a lunch event",
+    "maximumAttendees": 1
 }
+
+
+###
+
+POST http://localhost:3333/events/a92bb9bc-6130-49ce-8ff4-55a49582ce45/attendees
+Content-Type: application/json
+
+{
+    "name": "Aryel Ramos",
+    "email": "aryel@123.com"
+}
+
+###
+
+GET http://localhost:3333/events/a92bb9bc-6130-49ce-8ff4-55a49582ce45
+
+###
+
+GET http://localhost:3333/attendees/2/badge
